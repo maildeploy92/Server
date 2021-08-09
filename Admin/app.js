@@ -18,7 +18,7 @@ app.use(cors(corsOptions));
 
 mongoose
   .connect(
-    `mongodb+srv://root:${dbConfig.PASSWORD}@learnmongodb.tuuzo.mongodb.net/${dbConfig.DBNAME}?retryWrites=true&w=majority`,
+    `mongodb+srv://admin:admin123@cluster0.m3962.mongodb.net/CarWashSystem?retryWrites=true&w=majority`,
     { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }
   )
   .catch((err) => {
